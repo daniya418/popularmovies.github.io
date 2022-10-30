@@ -1,0 +1,77 @@
+.movie-grid {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    padding: 12px;
+    align-content: space-between;
+    background-color: black;
+    padding-top: 26px;
+    
+}
+
+
+.card {
+    
+    color: black;  
+    border-radius: 7px;
+   
+    
+    
+     
+}
+.card:hover{
+  border-style: solid;
+  border-color: rgb(129, 127, 127);
+  border-width: 0.06px;
+  transform: scale(1.04);
+  transition: 0.31s;
+  box-shadow: 1px 1px 10px rgb(193, 193, 193);
+ 
+}
+
+
+.images {
+    max-width: 100%;
+    border-radius: 7px;
+    
+  }
+
+
+
+
+.movie-name{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto,Arial;
+    color: rgb(158, 158, 158);
+    font-size: 16px;
+    margin-top: 16px;  
+    
+}
+.stars{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    
+    
+}
+.star{
+    color:rgb(216, 216, 93);
+    font-size: 20px;
+}
+
+@media (min-width: 200px) {
+    .movie-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+@media (min-width: 500px) {
+    .movie-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+@media (min-width: 650px) {
+    .movie-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+@media (min-width: 860px) {
+    .movie-grid { grid-template-columns: repeat(5, 1fr); }
+  }
